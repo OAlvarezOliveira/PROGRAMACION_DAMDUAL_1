@@ -1,7 +1,8 @@
+package Secuencial;
 import java.awt.datatransfer.SystemFlavorMap;
 
 /**
- * Resolucion de la tarea 
+ * Resolucion de la tarea
  * 
  * Curso 2025-26
  * 
@@ -14,16 +15,15 @@ public class Plantilla {
 
 	public static void main(String[] args) {
 
-		//Declaracion de variables
+		// Declaracion de variables
 
-		//Inicializacion
+		// Inicializacion
 
-		//Entrada de datos
-		
-		//Operativa
-		
-		//Salida de informacion
+		// Entrada de datos
 
+		// Operativa
+
+		// Salida de informacion
 
 	}
 

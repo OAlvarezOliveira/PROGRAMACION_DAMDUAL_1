@@ -1,3 +1,5 @@
+package Secuencial;
+
 /**
  * Resolucion de la tarea 
  * 
@@ -8,28 +10,29 @@
  *
  */
 import java.util.Scanner;
+
 public class Ejercicios02 {
 
 	public static void main(String[] args) {
 
-		//Declaracion de variables
+		// Declaracion de variables
 		double altura;
 		double base;
 		double res;
-		Scanner teclado = new Scanner(System.in);		
-		
-		//Inicializacion
-		
-		//Entrada de datos
+		Scanner teclado = new Scanner(System.in);
+
+		// Inicializacion
+
+		// Entrada de datos
 		System.out.println("introduce la altura:");
 		altura = teclado.nextDouble();
 		System.out.println("introduce la base:");
 		base = teclado.nextDouble();
-		
-		//Operativa
-		res = (altura * base)/2 ; 
-		//Salida de informacion
-		System.out.println("El resultado es:"+ res);
+
+		// Operativa
+		res = (altura * base) / 2;
+		// Salida de informacion
+		System.out.println("El resultado es:" + res);
 
 	}
 
