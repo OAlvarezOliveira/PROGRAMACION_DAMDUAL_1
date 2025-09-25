@@ -1,4 +1,4 @@
-package Secuencial;
+package com.acarballeira.ud1.secuencial;
 import java.awt.datatransfer.SystemFlavorMap;
 
 /**
