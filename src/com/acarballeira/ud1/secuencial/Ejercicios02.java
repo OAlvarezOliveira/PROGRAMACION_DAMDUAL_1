@@ -20,6 +20,8 @@ public class Ejercicios02 {
 		double base;
 		double res;
 		Scanner teclado = new Scanner(System.in);
+		teclado.close();
+
 
 		// Inicializacion
 

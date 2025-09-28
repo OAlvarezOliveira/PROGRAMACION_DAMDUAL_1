@@ -11,8 +11,7 @@ package com.acarballeira.ud1.secuencial;
  */
 
 import java.util.Scanner;
-import java.time.LocalDate;
-import java.time.Period;
+
 
 /*
 Pedimos un número entero entre 32 y 255 (el rango visible de la tabla ASCII extendida).
@@ -40,6 +39,8 @@ public class Ejercicios10 {
 		// ----------------------------
 		System.out.print("Introduce un número entero entre 32 y 255: ");
 		numero = teclado.nextInt();
+		teclado.close();
+
 
 		// ----------------------------
 		// 3. Operativa

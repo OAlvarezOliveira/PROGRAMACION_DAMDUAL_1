@@ -35,6 +35,8 @@ public class Ejercicios05 {
 
 		System.out.print("Introduce c: ");
 		c = teclado.nextDouble();
+		teclado.close();
+
 
 		// ----------------------------
 		// 3. Operativa

@@ -10,9 +10,6 @@ package com.acarballeira.ud1.secuencial;
  *
  */
 
-import java.util.Scanner;
-import java.time.LocalDate;
-import java.time.Period;
 
 /*
 Recorremos con un bucle for todos los valores del intervalo [32, 255].

@@ -19,6 +19,8 @@ public class Ejercicios03 {
 		double radio;
 		double area;
 		Scanner teclado = new Scanner(System.in);
+		teclado.close();
+
 
 		// Inicializacion
 

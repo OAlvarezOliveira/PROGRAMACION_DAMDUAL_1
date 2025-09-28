@@ -1,5 +1,5 @@
 package com.acarballeira.ud1.secuencial;
-import java.awt.datatransfer.SystemFlavorMap;
+
 
 /**
  * Resolucion de la tarea

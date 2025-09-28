@@ -27,6 +27,8 @@ public class Ejercicios04 {
 		a = teclado.nextDouble();
 		System.out.println("introduce el valor de b:");
 		b = teclado.nextDouble();
+		teclado.close();
+
 
 		// Operativa
 		a = a + b; // Total
