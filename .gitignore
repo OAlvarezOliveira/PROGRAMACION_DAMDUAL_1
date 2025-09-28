@@ -1,1 +1,31 @@
+# Archivos y carpetas generadas por Eclipse
+.classpath
+.project
+.settings/
+
+# Archivos generados por compilación
 /bin/
+/target/
+/build/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Archivos de entorno de usuario
+*.iml
+.idea/
+
+# Archivos de pruebas o cobertura
+/test-output/
+coverage/
+
+# Carpetas comunes de dependencias (Maven, Gradle)
+.mvn/
+.gradle/
