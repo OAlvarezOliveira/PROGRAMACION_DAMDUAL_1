@@ -26,43 +26,34 @@ public class Ejercicio07 {
 	 public static void main(String[] args) {
 
 	        // Declaración de variables
-	        int r, s, t, maximo;
+	        int a, b, c;
 
 	        // Inicialización
-	        r = 0;
-	        s = 0;
-	        t = 0;
-	        maximo = 0;
+	        a = 0;
+	        b = 0;
+	        c = 0;
 
 	        // Entrada de datos
 	        Scanner scanner = new Scanner(System.in);
 
 	        System.out.print("Introduce el valor de r: ");
-	        r = scanner.nextInt();
+	        a = scanner.nextInt();
 
 	        System.out.print("Introduce el valor de s: ");
-	        s = scanner.nextInt();
+	        b = scanner.nextInt();
 
 	        System.out.print("Introduce el valor de t: ");
-	        t = scanner.nextInt();
+	        c = scanner.nextInt();
 
 	        // Operativa
-	        if (r >= s) {
-	            if (r >= t) {
-	                maximo = r;
-	            } else {
-	                maximo = t;
-	            }
-	        } else {
-	            if (s >= t) {
-	                maximo = s;
-	            } else {
-	                maximo = t;
-	            }
+	        if (a >= b && b >= c) {
+	          
 	        }
 
 	        // Salida de información
-	        System.out.println("El valor máximo es: " + maximo);
+	        System.out.println(" Orden de mayor a menor es: ");
+	        System.out.println(" Orden de menor a mayor es: ");
+
 
 	        scanner.close();
 	    }
