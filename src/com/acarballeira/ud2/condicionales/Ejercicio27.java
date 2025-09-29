@@ -20,10 +20,10 @@ public class Ejercicio27 {
     public static void main(String[] args) {
 
         // Declaración de variables
-        int mes, año, dias;
+        int mes, anio, dias;
 
         // Inicialización
-        mes = año = dias = 0;
+        mes = anio = dias = 0;
 
         // Entrada de datos
         Scanner scanner = new Scanner(System.in);
@@ -32,7 +32,7 @@ public class Ejercicio27 {
         mes = scanner.nextInt();
 
         System.out.print("Introduce el año: ");
-        año = scanner.nextInt();
+        anio = scanner.nextInt();
 
         // Operativa: determinar los días del mes
         if (mes >= 1 && mes <= 12) {
@@ -42,7 +42,7 @@ public class Ejercicio27 {
                 dias = 30;
             } else if (mes == 2) {
                 // Verificar si el año es bisiesto
-                if ((año % 4 == 0 && año % 100 != 0) || (año % 400 == 0)) {
+                if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0)) {
                     dias = 29;
                 } else {
                     dias = 28;
@@ -50,7 +50,7 @@ public class Ejercicio27 {
             }
 
             // Salida de información
-            System.out.println("El mes " + mes + " del año " + año + " tiene " + dias + " días.");
+            System.out.println("El mes " + mes + " del año " + anio + " tiene " + dias + " días.");
         } else {
             System.out.println("Número de mes no válido.");
         }

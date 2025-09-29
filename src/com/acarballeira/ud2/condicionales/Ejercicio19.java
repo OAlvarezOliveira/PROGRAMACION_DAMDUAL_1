@@ -25,7 +25,7 @@ public class Ejercicio19 {
     public static void main(String[] args) {
 
         // Declaración de variables
-        int distancia, año, categoria = 0;
+        int distancia, anio, categoria = 0;
         double peso, tarifa_registro = 0;
         double monto_total = 0, igv = 0;
 
@@ -50,13 +50,13 @@ public class Ejercicio19 {
 
         // Registro del vehículo
         System.out.print("Introduce el año del vehículo: ");
-        año = scanner.nextInt();
+        anio = scanner.nextInt();
 
         System.out.print("Introduce el peso del vehículo (en libras): ");
         peso = scanner.nextDouble();
 
         // Determinar categoría y tarifa según tabla
-        if (año <= 1970) {
+        if (anio <= 1970) {
             if (peso < 2700) {
                 categoria = 1;
                 tarifa_registro = 11600;
@@ -67,7 +67,7 @@ public class Ejercicio19 {
                 categoria = 3;
                 tarifa_registro = 34800;
             }
-        } else if (año >= 1971 && año <= 1979) {
+        } else if (anio >= 1971 && anio <= 1979) {
             if (peso < 2700) {
                 categoria = 4;
                 tarifa_registro = 16600;

@@ -22,25 +22,25 @@ public class Ejercicio14 {
     public static void main(String[] args) {
 
         // Declaración de variables
-        int año;
+        int anio;
 
         // Inicialización
-        año = 0;
+        anio = 0;
 
         // Entrada de datos
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Introduce un año (ej: 2024): ");
-        año = scanner.nextInt();
+        anio = scanner.nextInt();
 
         // Operativa y salida de información
-        if ((año % 4 == 0) && (año % 100 != 0)) {
-            System.out.println("El año " + año + " es bisiesto.");
+        if ((anio % 4 == 0) && (anio % 100 != 0)) {
+            System.out.println("El año " + anio + " es bisiesto.");
         } else {
-            if (año % 400 == 0) {
-                System.out.println("El año " + año + " es bisiesto.");
+            if (anio % 400 == 0) {
+                System.out.println("El año " + anio + " es bisiesto.");
             } else {
-                System.out.println("El año " + año + " no es bisiesto.");
+                System.out.println("El año " + anio + " no es bisiesto.");
             }
         }
 
