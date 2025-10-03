@@ -32,20 +32,16 @@ public class Ejercicio14 {
 
         System.out.print("Introduce un año (ej: 2024): ");
         anio = scanner.nextInt();
+        scanner.close();
 
         // Operativa y salida de información
-        if ((anio % 4 == 0) && (anio % 100 != 0)) {
+        if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0)) {
             System.out.println("El año " + anio + " es bisiesto.");
-        } else {
-            if (anio % 400 == 0) {
-                System.out.println("El año " + anio + " es bisiesto.");
-            } else {
+        }  else {
                 System.out.println("El año " + anio + " no es bisiesto.");
             }
         }
 
-        scanner.close();
     }
-}
 
 

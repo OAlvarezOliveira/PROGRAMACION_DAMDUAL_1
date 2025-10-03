@@ -19,7 +19,7 @@ resultado. Si el símbolo no es correcto deberá imprimir un mensaje
 que indique “Error en símbolo”.
 
  */
-public class Ejercicio4_string {
+public class Ejercicio04_string {
 
 	/**
 	 * @param args

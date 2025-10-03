@@ -44,7 +44,7 @@ public class Ejercicio11 {
 
         // Operativa
         area_rectangulo = lado1 * lado2;
-        area_circulo = 3.1416 * radio * radio;
+        area_circulo = Math.PI * radio * radio;
 
         // Comparación y salida de información
         if (area_rectangulo == area_circulo) {
