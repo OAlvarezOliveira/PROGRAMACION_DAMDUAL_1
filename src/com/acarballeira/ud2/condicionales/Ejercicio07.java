@@ -5,56 +5,76 @@
  *
  * @author oalva
  * @version 1.0
- * File: Ejercicio01.java
+ * File: Ejercicio07.java
  */
 
 package com.acarballeira.ud2.condicionales;
 import java.util.Scanner;
 
-
 /**
 Escribir un algoritmo que permita ingresar tres números 
 distintos entre sí y los muestre en pantalla ordenados de mayor 
 a menor y de menor a mayor.
-
- */
+*/
 public class Ejercicio07 {
 
 	/**
 	 * @param args
 	 */
-	 public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	        // Declaración de variables
-	        int a, b, c;
+        // Declaración de variables
+        int a, b, c;
 
-	        // Inicialización
-	        a = 0;
-	        b = 0;
-	        c = 0;
+        // Entrada de datos
+        Scanner scanner = new Scanner(System.in);
 
-	        // Entrada de datos
-	        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce el valor de a: ");
+        a = scanner.nextInt();
 
-	        System.out.print("Introduce el valor de r: ");
-	        a = scanner.nextInt();
+        System.out.print("Introduce el valor de b: ");
+        b = scanner.nextInt();
 
-	        System.out.print("Introduce el valor de s: ");
-	        b = scanner.nextInt();
+        System.out.print("Introduce el valor de c: ");
+        c = scanner.nextInt();
 
-	        System.out.print("Introduce el valor de t: ");
-	        c = scanner.nextInt();
+        // Variables auxiliares para ordenamiento
+        int mayor, medio, menor;
 
-	        // Operativa
-	        if (a >= b && b >= c) {
-	          
-	        }
+        // Operativa para ordenar los tres números
+        if (a > b && a > c) {
+            mayor = a;
+            if (b > c) {
+                medio = b;
+                menor = c;
+            } else {
+                medio = c;
+                menor = b;
+            }
+        } else if (b > a && b > c) {
+            mayor = b;
+            if (a > c) {
+                medio = a;
+                menor = c;
+            } else {
+                medio = c;
+                menor = a;
+            }
+        } else {
+            mayor = c;
+            if (a > b) {
+                medio = a;
+                menor = b;
+            } else {
+                medio = b;
+                menor = a;
+            }
+        }
 
-	        // Salida de información
-	        System.out.println(" Orden de mayor a menor es: ");
-	        System.out.println(" Orden de menor a mayor es: ");
+        // Salida de información
+        System.out.println("Orden de mayor a menor: " + mayor + ", " + medio + ", " + menor);
+        System.out.println("Orden de menor a mayor: " + menor + ", " + medio + ", " + mayor);
 
-
-	        scanner.close();
-	    }
+        scanner.close();
+    }
 }
