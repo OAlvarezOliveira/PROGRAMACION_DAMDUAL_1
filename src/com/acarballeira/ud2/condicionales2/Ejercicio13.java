@@ -8,6 +8,11 @@
  * File: Ejercicio11.java
  */
 
+/*
+ Programa que pida un número en el rango [1-99] 
+ y lo imprima en letras: Ej 56 -> cincuenta y seis  
+*/
+
 package com.acarballeira.ud2.condicionales2;
 
 import java.util.Scanner;

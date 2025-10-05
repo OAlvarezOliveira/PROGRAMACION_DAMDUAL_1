@@ -14,9 +14,7 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 /**
-Programa que indique 
-cuantas cifras tiene un número entero
-introducido por teclado. Número en el rango [0-99999]. 
+Pedir día, mes y año y comprobar que la fecha compuesta sea correcta.  . 
  */
 public class Ejercicio10 {
 

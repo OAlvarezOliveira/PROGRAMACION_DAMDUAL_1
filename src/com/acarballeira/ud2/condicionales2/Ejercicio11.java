@@ -5,50 +5,58 @@
  *
  * @author oalva
  * @version 1.0
- * File: Ejercicio11.java
+ * File: Ejercicio06.java
  */
 
 package com.acarballeira.ud2.condicionales2;
 import java.util.Scanner;
 
 /**
- * Pedir un número en el rango [0-9999] e indicar si es o no capicúa.  
+ Programa que pida hora, minutos y segundos e 
+ indique la hora que será un segundo más tarde.  
  */
 public class Ejercicio11 {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        // Declaración de variables
-        String numero;
-        boolean esCapicua;
-        int longitud;
+		// Declaración de variables
+		int  horas;
+		int  minutos;
+		int  segundos;
+		int segundostotales;
 
-        // Entrada de datos
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce el número a comprobar (0-9999): ");
-        numero = scanner.nextLine();
-        
-        // Inicialización
-        longitud = numero.length();
-        esCapicua = true;
-        
-        
-        // Comparación manual de los extremos
-               
-        for (int i = 0; i < longitud / 2; i++) {
-            if (numero.charAt(i) != numero.charAt(longitud - 1 - i)) {
-                esCapicua = false;
-                break;
-            }
+		// Entrada de datos
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Introdece las horas: ");
+		horas = scanner.nextInt();
+		segundostotales = horas *360;
+		
+		System.out.println("Introdece los minutos: ");
+		minutos = scanner.nextInt();
+		segundostotales = segundostotales + (minutos *60);
+
+		System.out.println("Introdece los segundos: ");
+		segundos = scanner.nextInt();
+		segundostotales = segundostotales + segundos;
+		scanner.close();
+		
+        //Operativa
+        if (segundos == 60) {
+            segundos = 0;
+            minutos++;
         }
 
-        // Resultado
-        if (esCapicua) {
-            System.out.println("El número " + numero + " es capicúa.");
-        } else {
-            System.out.println("El número " + numero + " no es capicúa.");
+        if (minutos == 60) {
+            minutos = 0;
+            horas++;
         }
 
-        scanner.close();
+        if (horas == 24) {
+            horas = 0;
+        }
+
+        // Salida
+        System.out.printf("La hora +1 seg es → %02d:%02d:%02d\n", horas, minutos, segundos);
     }
+
 }
