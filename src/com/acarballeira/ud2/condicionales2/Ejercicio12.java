@@ -9,8 +9,6 @@
  */
 
 package com.acarballeira.ud2.condicionales2;
-import java.time.DateTimeException;
-import java.time.LocalDate;
 import java.util.Scanner;
 
 /**
@@ -33,6 +31,7 @@ public class Ejercicio12 {
 		System.out.println("Introdece las horas: ");
 		horas = scanner.nextInt();
 		segundostotales = horas *360;
+		
 		System.out.println("Introdece los minutos: ");
 		minutos = scanner.nextInt();
 		segundostotales = segundostotales + (minutos *60);
@@ -42,8 +41,7 @@ public class Ejercicio12 {
 		segundostotales = segundostotales + segundos;
 		scanner.close();
 		
-		
-
+        //Operativa
         if (segundos == 60) {
             segundos = 0;
             minutos++;
@@ -58,7 +56,7 @@ public class Ejercicio12 {
             horas = 0;
         }
 
-        // Mostrar resultado
+        // Salida
         System.out.printf("La hora +1 seg es → %02d:%02d:%02d\n", horas, minutos, segundos);
     }
 

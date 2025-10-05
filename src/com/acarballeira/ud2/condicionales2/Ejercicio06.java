@@ -30,7 +30,7 @@ public class Ejercicio06 {
         num2 = scanner.nextDouble();
         scanner.close();
 
-        // Comparación
+        //Operativa
         if (num1 == num2) {
             System.out.println("⚠️ Los números introducidos son iguales.");
         } else if (num1 > num2) {

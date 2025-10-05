@@ -27,9 +27,6 @@ public class Ejercicio10 {
 		int  mes;
 		int  anio;
 		LocalDate fecha;
-		
-
-		
 
 		// Entrada de datos
 		Scanner scanner = new Scanner(System.in);

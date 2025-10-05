@@ -28,7 +28,8 @@ public class Ejercicio09 {
         System.out.print("Introduce un número entero rango [0-99999]: ");
         a = scanner.nextInt();
         scanner.close();
-
+        
+        //Operativa y Salida	
         if (a < 10) {
             System.out.println("Tiene 1 cifra");
         } else if (a < 100) {
