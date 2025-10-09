@@ -13,9 +13,12 @@ package com.acarballeira.ud1.bucles;
 import java.util.Scanner;
 
 /**
- * Crea un programa que genere dos números al azar entre el 0 y el 100, y pida
- * al usuario que calcule e introduzca su suma. Si la respuesta no es correcta,
- * deberá volver a pedirla tantas veces como sea necesario hasta que el usuario
+ * Crea un programa que genere dos números al azar entre 
+ * el 0 y el 100, y pida
+ * al usuario que calcule e introduzca su suma. 
+ * Si la respuesta no es correcta,
+ * deberá volver a pedirla tantas veces 
+ * como sea necesario hasta que el usuario
  * acierte.
  */
 

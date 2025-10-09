@@ -12,34 +12,35 @@ package com.acarballeira.ud1.buclesfor;
 
 import java.util.Scanner;
 
-/*
-Dibuja un triángulo creciente de asteriscos, 
-del tamaño que indique el usuario.
+/**
+Dibuja un cuadrado de asteriscos.
+Debe solicitar al usuario el lado del cuadrado. 
+Por ejemplo, para el valor 4:
+ * 
  */
 
 public class Ejercicio08 {
 
 	public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce el tamaño del triángulo: ");
-        int n = scanner.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-        	
-            // Imprimir espacios
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
-            }
+        Scanner scanner; 
+        int lado;
+        
 
-            // Imprimir asteriscos con espacio
-            for (int k = 1; k <= i; k++) {
-                System.out.print("* ");
-            }
-
-            // Saltar a la siguiente línea
-            System.out.println();
-        }
-
+        System.out.print("Introduce el tamaño del lado del cuadrado: ");
+        scanner = new Scanner(System.in);
+        lado= scanner.nextInt();
         scanner.close();
-    }
+
+        //COLUMNAS 
+        for (int i=0 ; i < lado;i++) {
+        	  //FILAS  
+			for (int j=0 ; j < lado;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+
+	}
 }
