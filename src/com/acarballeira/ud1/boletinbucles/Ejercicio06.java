@@ -29,7 +29,7 @@ public class Ejercicio06 {
 		int mayor;
 		int menor;
 
-		do {
+
 			System.out.println("Introduce [99] en algun valor de rango para finalizar");
 			System.out.print("Ingrese el valor de un limite del intervalo:  ");
 			a = sc.nextInt();
@@ -46,6 +46,27 @@ public class Ejercicio06 {
 				menor = a;
 				System.out.println("Rango:" + "["+ menor + ":" + mayor + "]");
 			}
+			
+			do {
+				System.out.print("Ingrese el a incrementar en rango A :  ");
+				acumulaA = sc.nextInt();
+				System.out.print("Ingrese el a incrementar en rango B ");
+				acumulaB = sc.nextInt();
+				
+			if (acumulaA < menor )	{
+			acumulaA=+menor;
+			System.out.println(acumulaA);
+			}else {
+				acumulaA=+mayor;
+				System.out.println(acumulaA);				
+			}
+			if (acumulaB < menor )	{
+				acumulaB=+menor;
+				System.out.println(acumulaA);
+				}else {
+					acumulaB=+mayor;
+					System.out.println(acumulaB);				
+				}
 
 		} while ((a != 99) || (b != 99));
 		sc.close();

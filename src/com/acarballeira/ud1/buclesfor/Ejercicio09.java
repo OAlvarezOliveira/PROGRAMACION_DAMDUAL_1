@@ -23,20 +23,21 @@ public class Ejercicio09 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce el tamaño del triángulo: ");
         int n = scanner.nextInt();
-
-        for (int i = 1; i <= n; i++) {
+        //Filas
+        for (int i = 0; i < n; i++) {
         	
             // Imprimir espacios
-            for (int j = 1; j <= n - i; j++) {
+            for (int j = 0; j < n - i - 1; j++) {
                 System.out.print(" ");
             }
 
             // Imprimir asteriscos con espacio
-            for (int k = 1; k <= i; k++) {
-                System.out.print("* ");
+            for (int k = 0; k < (i *2)+1 ; k++) {
+                System.out.print("*");
             }
 
-            // Saltar a la siguiente línea
+
+            // Saltar a la siguiente Fila
             System.out.println();
         }
 

@@ -36,7 +36,7 @@ public class Ejercicio03 {
 		}	while (num != 0);
 		sc.close();
 		System.out.println("minimo de la lista"+ minimo);
-		System.out.print("Fin del Progrma , has metido 0");
+		System.out.print("Fin del Programa , has metido 0");
 
    }
 }

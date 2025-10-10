@@ -8,7 +8,7 @@
  * File: Ejercicio01.java
  */
 
-package com.acarballeira.ud1.boletinbucles;
+package pruebas;
 
 import java.util.Scanner;
 
@@ -18,18 +18,17 @@ Calcular y emitir el promedio de cada juego.
 El proceso finaliza al encontrarse un juego 
 cuyo primer valor es 0 (cero). 
  */
-public class Ejercicio02 {
+public class buclesvariaos {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num1, num2, num3, num4;
 		double promedio;
 
-		do {
 			System.out.print("Ingrese el primer valor (0 para salir): ");
 			num1 = sc.nextInt();
 
-			if (num1 != 0) {
+			while (num1 != 0) {
 				System.out.print("Ingrese el segundo valor: ");
 				num2 = sc.nextInt();
 				System.out.print("Ingrese el tercer valor: ");
@@ -41,7 +40,6 @@ public class Ejercicio02 {
 				System.out.println("Promedio del juego: " + promedio);
 			}
 
-		} while (num1 != 0);
 		System.out.println("Fin del juego" );
 		sc.close();
 	}

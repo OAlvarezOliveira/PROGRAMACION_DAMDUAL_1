@@ -9,7 +9,6 @@
  */
 
 package com.acarballeira.ud1.boletinbucles;
-
 import java.util.Scanner;
 
 
