@@ -18,24 +18,30 @@ número 0 (cero), al finalizar emitir el valor
 mínimo de la lista.
  */
 public class Ejercicio04 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        int maximo = Integer.MIN_VALUE;
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int num;
-		int maximo = Integer.MIN_VALUE;
+        do {
+            System.out.print("Ingrese un valor (0 para terminar): ");
+            num = sc.nextInt();
 
-		do {
-			System.out.print("Ingrese el valor a almacenar:  ");
-			num = sc.nextInt();
-			if (num != 0 && (num > maximo ) ){
-			     maximo = num ;
-			     System.out.println("numero"+ num);
-			     System.out.println("maximo acumulado"+ maximo);
-			}	
-		}	while (num != 0);
-		sc.close();
-		System.out.println("maximo de la lista"+ maximo);
-		System.out.print("Fin del Progrma , has metido 0");
+            if (num != 0 && num > maximo) {
+                maximo = num;
+                System.out.println("Número ingresado: " + num);
+                System.out.println("Máximo acumulado: " + maximo);
+            }
 
-   }
+        } while (num != 0);
+
+        if (maximo == Integer.MIN_VALUE) {
+            System.out.println("No se ingresaron números válidos.");
+        } else {
+            System.out.println("\nMáximo de la lista: " + maximo);
+        }
+
+        System.out.println("Fin del programa. Has ingresado 0.");
+        sc.close();
+    }
 }

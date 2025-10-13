@@ -20,28 +20,40 @@ y la ubicación del máximo dentro de la
 lista. (Suponer un único máximo). 
  */
 public class Ejercicio05 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        int maximo = Integer.MIN_VALUE;
+        int posicionMax = 0;
+        int contador = 0;
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int num;
-		int maximo = Integer.MIN_VALUE;
-		int posicion = 0;
+        do {
+            System.out.print("Ingrese el valor a almacenar (0 para terminar): ");
+            num = sc.nextInt();
 
-		do {
-			System.out.print("Ingrese el valor a almacenar:  ");
-			num = sc.nextInt();
-			if (num != 0 && (num > maximo ) ){
-			     maximo = num ;
-			     posicion ++;
-			     System.out.println("numero"+ num);
-			     System.out.println("maximo acumulado"+ maximo);
-			     System.out.println("Posicion maximo"+ posicion);
-			}	
-		}	while (num != 0);
-		sc.close();
-		System.out.println("maximo de la lista"+ maximo);
-		System.out.println("Y ocupa la posición"+ posicion);
-		System.out.print("Fin del Progrma , has metido 0");
+            if (num != 0) {
+                contador++;
 
-   }
+                if (num > maximo) {
+                    maximo = num;
+                    posicionMax = contador;
+                }
+
+                System.out.println("Número ingresado: " + num);
+                System.out.println("Máximo acumulado: " + maximo);
+                System.out.println("Posición del máximo: " + posicionMax);
+            }
+
+        } while (num != 0);
+
+        if (maximo == Integer.MIN_VALUE) {
+            System.out.println("No se ingresaron números válidos.");
+        } else {
+            System.out.println("\nMáximo de la lista: " + maximo);
+            System.out.println("Ubicación del máximo: " + posicionMax);
+        }
+
+        System.out.println("Fin del programa. Has ingresado 0.");
+        sc.close();
+    }
 }
