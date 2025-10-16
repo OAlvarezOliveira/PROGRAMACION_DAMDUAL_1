@@ -39,14 +39,12 @@ public class Ejercicio15 {
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Entrada: ¿Cuántos pisos quiere construir el faraón?
         System.out.print("Ingrese el número de pisos de la pirámide: ");
         int CUANTOS = sc.nextInt();
 
         int PISO = 1;
         int USADOS = 0;
 
-        // Bucle que simula la construcción de la pirámide
         while (PISO <= CUANTOS) {
             USADOS += PISO;  // Se usan tantos bloques como el número del piso
             PISO++;          // Avanza al siguiente piso
