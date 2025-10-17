@@ -43,7 +43,7 @@ public class numperfecto {
 		 for (int i = 1 ; i < x ; i++){
 			 
 			 if(x%i == 0 ){
-				 suma = (i)+ suma; 
+				 suma = i+ suma; 
 			 } 
 			 if (suma == x ) { esPerfecto = true;}
 			 else {
