@@ -23,39 +23,23 @@ import java.util.Scanner;
 public class numperfecto {
 
 
-	public static void main(String[] args) {
-		
-		//declaracion
-		int x;
-		int num;
-		int suma = 0;
-		boolean esPerfecto = true;
-		
-		//inicializacion
-		num = 0;
-    	Scanner entrada= new Scanner(System.in); 
-    	
-    	
-		//Operativa
-        System.out.print("Introduce el numero para ver si es perfecto ");
-        x= entrada.nextInt();
-    	
-		 for (int i = 1 ; i < x ; i++){
-			 
-			 if(x%i == 0 ){
-				 suma = i+ suma; 
-			 } 
-			 if (suma == x ) { esPerfecto = true;}
-			 else {
-		     esPerfecto = false;
-			 }
-    	}
-		 if(esPerfecto = true ){
-			 System.out.println("Es perfecto");
-			 } else {
-		     System.out.println("Es imperfecto");}
-	
-		 entrada.close();
-  }
-	
-}
+	 public static void main(String[] args) {
+	        Scanner entrada = new Scanner(System.in);
+	        int num, suma = 0;
+
+	        System.out.print("Introduce un número: ");
+	        num = entrada.nextInt();
+
+	        for (int i = 1; i < num; i++) {
+	            if (num % i == 0) {
+	                suma += i;
+	            }
+	        }
+
+	        if (suma == num) {
+	            System.out.println(num + " es un número perfecto.");
+	        } else {
+	            System.out.println(num + " no es un número perfecto.");
+	        }
+	    }
+	}

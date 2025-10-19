@@ -24,30 +24,20 @@ import java.util.Scanner;
 
 public class factorial {
 
-
 	public static void main(String[] args) {
-		
-		//declaracion
-		int x;
-		int fact;
-		
-		//inicializacion
-		fact= 1;
-    	Scanner entrada= new Scanner(System.in); 
-    	
-    	
-		//Operativa
-        System.out.print("Introduce el numero a calcular su factorial ");
-         x= entrada.nextInt();
-    	
-		 for (int i = 1 ; i <= x ; i++){
-			 
-			 System.out.println ("valor de i: "+ i);      
-			 System.out.println ("operacion: " + (fact = (x *(x-i)*fact)));
-			 System.out.println("valor de factorial: "+fact);
-                    }
-	
-		 entrada.close();
-	}
+        Scanner entrada = new Scanner(System.in);
+        int x, fact = 1;
 
+        System.out.print("Introduce un número: ");
+        x = entrada.nextInt();
+
+        if (x < 0) {
+            System.out.println("El factorial no está definido para números negativos.");
+        } else {
+            for (int i = 1; i <= x; i++) {
+                fact = fact * i;
+            }
+            System.out.println("El factorial de " + x + " es: " + fact);
+        }
+    }
 }
