@@ -21,7 +21,7 @@ public class Ejercicio02 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int x;
-        int maxEdad = 0;
+        int maxEdad = Integer.MIN_VALUE;;
         int minEdad = Integer.MAX_VALUE;
         int contAlum = 0;
         int suma = 0;

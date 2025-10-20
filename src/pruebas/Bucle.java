@@ -15,7 +15,7 @@ import java.util.Scanner;
  *
  */
 
-public class bucle {
+public class Bucle {
 
 	/**
 	 * @param args

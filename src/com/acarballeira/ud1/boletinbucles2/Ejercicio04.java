@@ -25,18 +25,24 @@ operaciones realizadas correctamente
 public class Ejercicio04 {
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+    	//Declaracion de variables
+        Scanner entrada;
         int num1;
         int num2;
         int suma;
-        Random aleatorio;
         int adivinaResultado;
+        int repeticiones;
+        Random aleatorio;
+        
+    	//Inicializacion de variables
+        repeticiones = 0;
+        entrada = new Scanner(System.in);
 
+        //Operativa
         do {
         	aleatorio = new Random();
-    		
-        	num1 = aleatorio.nextInt(100);
-        	num2 = aleatorio.nextInt(100);
+        	num1 = aleatorio.nextInt(101);
+        	num2 = aleatorio.nextInt(101);
         	
         	suma = num1 + num2;
         	
@@ -44,12 +50,15 @@ public class Ejercicio04 {
             System.out.println("El segundo numero es "+ num2);
             System.out.println("Introduce la suma de los numeros que te he mostrado (Si fallas se acaba el juego): ");
             adivinaResultado = entrada.nextInt();
-
+          if(adivinaResultado == suma) {repeticiones++;
+          System.out.println("Acertaste");
+          }  
           
-
         } while (adivinaResultado == suma);
-
+        
+        //Salida
         System.out.println("Programa finalizado.Te has equivocado en la suma.");
+        System.out.println("Numero de aciertos acumulados: " + repeticiones);
         entrada.close();
     }
 }

@@ -22,7 +22,7 @@ import java.util.Scanner;
  * P.e: el factorial de 5 = 5 x 4 x 3 x 2 x 1. Tener en cuenta que el factorial de 0 es 1. 
  */
 
-public class factorial {
+public class Factorial {
 
 	public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);

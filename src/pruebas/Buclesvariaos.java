@@ -18,7 +18,7 @@ Calcular y emitir el promedio de cada juego.
 El proceso finaliza al encontrarse un juego 
 cuyo primer valor es 0 (cero). 
  */
-public class buclesvariaos {
+public class Buclesvariaos {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

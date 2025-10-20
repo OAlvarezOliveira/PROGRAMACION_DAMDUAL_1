@@ -15,15 +15,8 @@ import java.util.Scanner;
  *
  */
 
-/**
- * @author O.Alvarez
- *
- */
-public class menu {
+public class CalculadoraMenu {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 
 		// Declarar Variables

@@ -20,7 +20,7 @@ import java.util.Scanner;
  * P.e: el factorial de 5 = 5 x 4 x 3 x 2 x 1. Tener en cuenta que el factorial de 0 es 1. 
  */
 
-public class numperfecto {
+public class Numperfecto {
 
 
 	 public static void main(String[] args) {
@@ -41,5 +41,7 @@ public class numperfecto {
 	        } else {
 	            System.out.println(num + " no es un número perfecto.");
 	        }
+	   	 entrada.close();
 	    }
+
 	}
