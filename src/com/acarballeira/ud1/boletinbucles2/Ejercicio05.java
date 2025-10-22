@@ -10,9 +10,6 @@
 
 package com.acarballeira.ud1.boletinbucles2;
 
-import java.util.Random;
-import java.util.Scanner;
-
 /**
 5. Escribir todos los múltiplos de 7 menores que 100.   
  */
