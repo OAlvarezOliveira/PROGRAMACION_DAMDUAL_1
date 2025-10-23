@@ -17,7 +17,7 @@ Pedir un número entero y dibujar un
 triángulo rectángulo de n elementos de lado
 utilizando asteriscos. Por ejemplo, para n = 4:.
  */
-public class Ejercicio09 {
+public class Ejercicio09B {
 
 	public static void main(String[] args) {
 
@@ -31,13 +31,14 @@ public class Ejercicio09 {
 		// Operativa
 		System.out.print("Introduce la altura del triángulo rectángulo: ");
 		altura = entrada.nextInt();
-		for (int j = 0; j < altura; j++) {
-			
-			for (int i = 0; i < altura-j; i++) {
-				System.out.print("* ");
-			}
-			System.out.print("\n");
-		}
+		 for (int i = 0; i < altura; i++) {
+	            for (int j = 0; j <= i; j++) {
+//	                valor = factorial(i) / (factorial(j) * factorial(i - j));
+//	                System.out.print(valor + " ");
+	            	System.out.print("1");
+	            }
+	            System.out.println();
+	        }
 		// Salida de datos
 		entrada.close();
 	}
