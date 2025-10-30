@@ -35,7 +35,7 @@ public class Ejercicio09B {
 	            for (int j = 0; j <= i; j++) {
 //	                valor = factorial(i) / (factorial(j) * factorial(i - j));
 //	                System.out.print(valor + " ");
-	            	System.out.print("1");
+	            	System.out.print(" 1");
 	            }
 	            System.out.println();
 	        }
