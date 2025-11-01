@@ -37,35 +37,40 @@ public class Ejercicio01 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Random aleatorio;
-		int  numeroCompruebo;
-		int  num1;
-		int  num2;
-		int  suma;
-		int vidas;
-		Scanner entrada; 
 
-		
-		vidas = 5;
+		// Declarar Variables
+		int num;
+		int numSecret;
+		int vidas;
+		boolean acertado;
+		Random aleatorio;
 		aleatorio = new Random();
-    	entrada= new Scanner(System.in);      
-		num1 = aleatorio.nextInt(101);
-		num2 = aleatorio.nextInt(101);
-		
-		do {
-			System.out.println("Introduce un numero");
-			numeroCompruebo = entrada.nextInt();
-			suma = num1 + num2;
-//			System.out.println("suma vale" + suma );
-			vidas--;
-			if (vidas > 0 && ( numeroCompruebo == suma) ) {
-				System.out.println("Acertaste");
-			} else {				
-				System.out.println("Bobo te quedan : "+ (vidas) + " para acertar." );
-				System.out.println("El número a acertar es el anterior a: "+ (suma+1) );
-			}				
+		Scanner entrada = new Scanner(System.in);
+
+		// Inicio Variables
+		vidas = 5;
+		acertado = false;
+		numSecret = aleatorio.nextInt(0, 101); // genero el numero del 0-100 para adivinar
+
+		while (vidas > 0 && !acertado) {
+		    System.out.println("Introduce el número (0-100). Te quedan " + vidas + " vidas:");
+		    num = entrada.nextInt();
+
+		    if (num == numSecret) {
+		        acertado = true;
+		        System.out.println("¡Has acertado!");
+		    } else if (num > numSecret) {
+		        System.out.println("¡Demasiado alto!");
+		        vidas--;
+		    } else {
+		        System.out.println("¡Demasiado bajo!");
+		        vidas--;
+		    }
 		}
-		while(vidas > 0 );	
+
+		if (!acertado) {
+		    System.out.println("Has agotado tus intentos. El número era: " + numSecret);
+		}// Fin While
 		entrada.close();
 	}
 
