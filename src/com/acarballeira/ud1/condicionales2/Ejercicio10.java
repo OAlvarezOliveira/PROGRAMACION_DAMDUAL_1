@@ -20,11 +20,12 @@ public class Ejercicio10 {
 
 	public static void main(String[] args) {
 
-		// Declaración de variables
+		// Inicializacion de variables
 		int  dia;
 		int  mes;
 		int  anio;
 		LocalDate fecha;
+
 
 		// Entrada de datos
 		Scanner scanner = new Scanner(System.in);
