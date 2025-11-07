@@ -26,7 +26,7 @@ public class App_2 {
 		// Toma de datos
 		System.out.println("Introduce el alto del rectangulo");
 		a = entrada.nextInt();
-		System.out.println("Introduce el ancho del cuadrado");
+		System.out.println("Introduce el ancho del rectangulo");
 		b = entrada.nextInt();
 
 		// Operativa
