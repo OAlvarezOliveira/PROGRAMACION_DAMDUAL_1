@@ -25,23 +25,33 @@ Salida de ejemplo
 24
  * */
 
-public class Ejercicio340 {
+public class  Problema340 {
 
 	public static void main(String[] args) {
 
 		// Declaracion
-		int ancho_cubos;
-		int alto_cubos;
-		int cerillas;
+		int casos;
+		long n;
+		long m;
+		long cerillas;
 		Scanner teclado;
-
 
 		// Inicializacion
 		teclado = new Scanner(System.in);
 
 		// Operativa
-		ancho_cubos = teclado.nextInt();
-		alto_cubos = teclado.nextInt();
+		casos = teclado.nextInt();
+		for (int i = 0; i < casos; i++) {
+			n = teclado.nextLong();
+			m = teclado.nextLong();
+
+			cerillas = (m + 1) * n + (n + 1) * m;
+
+			System.out.println(cerillas);
+
+		}
+
+		teclado.close();
 
 	}
 

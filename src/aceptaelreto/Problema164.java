@@ -26,7 +26,7 @@ Salida de ejemplo
 
 import java.util.Scanner;
 
-public class Ejercicio164 {
+public class  Problema164 {
 
 	public static void main(String[] args) {
 

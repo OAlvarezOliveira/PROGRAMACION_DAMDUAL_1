@@ -41,7 +41,7 @@ import java.util.Scanner;
  * Entrada de ejemplo 2 1 1 1 1 15 2 3 1 4 52 Salida de ejemplo 54 462
  */
 
-public class Ejercicio293 {
+public class  Problema293 {
 
 	public static void main(String[] args) {
 

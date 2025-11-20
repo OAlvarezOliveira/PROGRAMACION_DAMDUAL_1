@@ -21,7 +21,7 @@ import java.util.Scanner;
  * Entrada de ejemplo 23:45 21:30 00:01 00:00 Salida de ejemplo 15 150 1439
  */
 
-public class Ejercicio148 {
+public class  Problema148 {
 
 	public static void main(String[] args) {
 

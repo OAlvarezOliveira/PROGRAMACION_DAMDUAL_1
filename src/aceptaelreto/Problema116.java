@@ -30,7 +30,7 @@ Hola mundo.
 
 import java.util.Scanner;
 
-public class Ejercicio116 {
+public class  Problema116 {
 
 	public static void main(String[] args) {
 		

@@ -27,7 +27,7 @@ import java.util.Scanner;
  * Entrada de ejemplo 2 5 2 99 5 63 63 5 0 0 Salida de ejemplo 3 2 41 41
  */
 
-public class Ejercicio166 {
+public class  Problema166 {
 
 	public static void main(String[] args) {
 
