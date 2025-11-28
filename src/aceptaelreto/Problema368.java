@@ -66,23 +66,39 @@ public class Problema368 {
 
 	public static void main(String[] args) {
 
-		int h;
-		int c;
-		int tandas;
+		double h;
+		double c;
+		double tandas;
 		int tiempoTotal;
 		final int COCCION = 10;
 		Scanner entrada = new Scanner(System.in);
 
 		while (true) {
-			h = entrada.nextInt(); // huevos
-			c = entrada.nextInt(); // capacidad
+			h = entrada.nextDouble(); // huevos
+			c = entrada.nextDouble(); // capacidad
 
 			if (h == 0 && c == 0) {
 				break;
 			} // condición de fin
 
-			tandas = (int) Math.ceil((double) h / c); // redondeo hacia arriba
-			tiempoTotal = tandas * COCCION;
+
+// 			tandas = (int) Math.ceil((double) h / c); // redondeo hacia arriba con funcion
+
+			tandas = h / c; 			
+			if (tandas >= 0) {
+
+           if (tandas == (int) tandas) {
+            	tandas = (int) tandas; 
+	            } else {
+	                // Si no es un entero, le sumamos 1
+	            	tandas  = (int) tandas + 1;
+	            }
+	        } else {
+
+	        	tandas =  (int) tandas;
+	        }
+			
+			tiempoTotal = (int) (tandas * COCCION);
 
 			System.out.println(tiempoTotal);
 		}

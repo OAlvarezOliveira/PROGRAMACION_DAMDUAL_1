@@ -39,7 +39,9 @@ public class Problema217 {
 
 		// Declaracion de variables
 		int nunVivienda;
+		String mensaje;
 		Scanner entrada;
+		
 
 		// Inicializacion de variables
 
@@ -52,11 +54,8 @@ public class Problema217 {
 				break;
 			}
 
-			if (nunVivienda % 2 == 0) {
-				System.out.println("DERECHA");
-			} else {
-				System.out.println("IZQUIERDA");
-			}
+			mensaje = (nunVivienda % 2 == 0) ? ("DERECHA") : ("IZQUIERDA");
+			System.out.println(mensaje);
 		}
 
 		entrada.close();
