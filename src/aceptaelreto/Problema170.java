@@ -42,7 +42,7 @@ import java.util.Scanner;
  * 
  * Entrada de ejemplo 1 6 13 0 Salida de ejemplo 1 0 3 0 4 3
  */
-public class Ejercicio170 {
+public class Problema170 {
 
 	public static void main(String[] args) {
 

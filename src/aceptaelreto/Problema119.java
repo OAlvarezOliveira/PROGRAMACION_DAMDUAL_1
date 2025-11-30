@@ -59,7 +59,7 @@ import java.util.Scanner;
  * 
  * Entrada de ejemplo 35 20 10 0 Salida de ejemplo 71 44 26
  */
-public class Ejercicio119 {
+public class Problema119 {
 
 	public static void main(String[] args) {
 
