@@ -79,6 +79,7 @@ public class Ejercicio170 {
 				}
 
 				piedrasRestantes = piedrasIniciales - piedrasUsadas;
+				//Salida de datos
 				System.out.printf("%d %d%n", lado, piedrasRestantes);
 
 			}
