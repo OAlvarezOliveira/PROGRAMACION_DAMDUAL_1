@@ -57,7 +57,10 @@ import java.util.Scanner;
  * Salida Para cada caso de prueba se escribirá una línea que indicará el número
  * de escudos mínimo que necesitamos para cumplir las restricciones del general.
  * 
- * Entrada de ejemplo 35 20 10 0 Salida de ejemplo 71 44 26
+ * Entrada de ejemplo 
+ * 35 20 10 0 
+ * Salida de ejemplo 
+ * 71 44 26
  */
 public class Problema119 {
 

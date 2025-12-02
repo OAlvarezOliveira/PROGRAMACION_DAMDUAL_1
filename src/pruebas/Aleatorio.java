@@ -20,7 +20,12 @@ public class Aleatorio {
 		aleatorio = new Random();
 		
 		num = aleatorio.nextInt(10,101);
+		
+		num = Math.abs(7 -15);
+
 		System.out.println (num);
+		
+		
 	}
 
 }
