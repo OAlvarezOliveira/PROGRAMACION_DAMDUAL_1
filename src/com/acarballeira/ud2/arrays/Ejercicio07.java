@@ -18,13 +18,13 @@ import java.util.Scanner;
  * tienen una altura inferior a la media. El valor de N se pide por teclado y
  * debe ser entero positivo.
  */
-public class Ejercicio7 {
+public class Ejercicio07 {
 
 	public static void main(String[] args) {
 
 		// Declaracion Variables
-		int[] alturaArray;
-		int altura;
+		double[] alturaArray;
+		double altura;
 		int n;
 		int alturaAcumulada;
 		double alturaMedia;
@@ -40,7 +40,7 @@ public class Ejercicio7 {
 		alturaAcumulada = 0;
 		accSuperiorAlturaMedia = 0;
 		accInferiorAlturaMedia = 0;
-		alturaArray = new int[n];
+		alturaArray = new double[n];
 
 		// Operativa
 

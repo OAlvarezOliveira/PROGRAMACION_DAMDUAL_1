@@ -52,26 +52,26 @@ public class Ejercicio05 {
         matriz[0][0] = dato;
 
         // DERECHA
-        valorDerecha = (int) Math.pow(dato, potencia);
-        potencia++;
+        valorDerecha = (int) Math.pow(dato,potencia++);
         matriz[0][1] = valorDerecha;
        
 
-        valorDerecha = (int) Math.pow(dato, potencia);
-        potencia++;
+        valorDerecha = (int) Math.pow(dato,potencia++);
         matriz[0][2] = valorDerecha;
 
 
         // ============================
         // ENTRADA F2 C2
         // ============================
+        //reset potecia por cada fila
+        potencia = 2;
+   
         System.out.printf("Dame [1][1]: ");
         dato = teclado.nextInt();
         matriz[1][1] = dato;
 
         // DERECHA
-        valorDerecha = (int) Math.pow(dato, 2);
-        potencia++;
+        valorDerecha = (int) Math.pow(dato,potencia++);
         matriz[1][2] = valorDerecha;
 
         // IZQUIERDA
@@ -81,6 +81,8 @@ public class Ejercicio05 {
         // ============================
         // ENTRADA F3 C3
         // ============================
+        //reset potecia por cada fila
+        potencia = 2;
         System.out.printf("Dame [2][2]: ");
         dato = teclado.nextInt();
         matriz[2][2] = dato;
@@ -98,7 +100,7 @@ public class Ejercicio05 {
         // ============================
         for (int[] fila : matriz) {
             for (int elemento : fila) {
-                System.out.printf("%02d ", elemento);
+                System.out.printf("%03d ", elemento);
             }
             System.out.println();
         }

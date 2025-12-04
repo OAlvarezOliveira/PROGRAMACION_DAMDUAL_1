@@ -25,7 +25,6 @@ public class Ejercicio06 {
 		
 		// Declaracion Variables
 		int[] numeros;
-		int j;
 		int accPos;
 		int accNeg;
 		int accCeros;
@@ -44,13 +43,12 @@ public class Ejercicio06 {
 		//Operativa
 		for (int i = 0; i < numeros.length; i++) {
 			System.out.printf("Añade un valores a numeros");
-			j = teclado.nextInt();
-			numeros[i] = j; // Asigna el valor de j a la posición 'i' del array
-//			System.out.println(j); //DEBUG
-			if (j == 0) {
+			numeros[i] = teclado.nextInt(); // Asigna el valor recogido en teclado a la posición 'i' del array
+//			System.out.println(numeros[i]); //DEBUG
+			if (numeros[i] == 0) {
 				accCeros++;
 
-			} else if (j >= 0) {
+			} else if (numeros[i] >= 0) {
 				accPos++;
 
 			} else {
