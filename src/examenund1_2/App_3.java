@@ -64,17 +64,17 @@ public class App_3 {
 		if (baseLiquidable <= TRAMO1) {
 			impuestoResultante = baseLiquidable * IRPF19;
 			
-		} else if (baseLiquidable > TRAMO1 && baseLiquidable <= TRAMO2 ) {
-			impuestoResultante = baseLiquidable * IRPF24;
+		} else if (baseLiquidable <= TRAMO2 ) {
+			impuestoResultante = (baseLiquidable * IRPF19) + (baseLiquidable - TRAMO1) * IRPF24;
 
-		} else if (baseLiquidable > TRAMO2 && baseLiquidable <= TRAMO3) {
-			impuestoResultante = baseLiquidable * IRPF30;
+		} else if (baseLiquidable <= TRAMO3) {
+			impuestoResultante = (baseLiquidable * IRPF19) + (baseLiquidable - TRAMO1) * IRPF24;
 			
-		} else if (baseLiquidable > TRAMO3 && baseLiquidable <= TRAMO4) {
-			impuestoResultante = baseLiquidable * IRPF37;
+		} else if (baseLiquidable <= TRAMO4) {
+			impuestoResultante = (baseLiquidable * IRPF19) + (baseLiquidable - TRAMO1) * IRPF24;
 
-		} else if (baseLiquidable > TRAMO4 && baseLiquidable <= TRAMO5) {
-			impuestoResultante = baseLiquidable * IRPF45;
+		} else if (baseLiquidable <= TRAMO5) {
+			impuestoResultante = (baseLiquidable * IRPF19) + (baseLiquidable - TRAMO1) * IRPF24;
 
 		} else {
 			impuestoResultante = baseLiquidable * IRPF47;

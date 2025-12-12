@@ -15,23 +15,18 @@ import java.util.Scanner;
  *
  */
 
-/**
- * @author O.Alvarez
- *
- */
 public class App_4 {
 
 	public static void main(String[] args) {
 
 		// Declara Variables
 		int altura;
-		Scanner  entrada;
-		
-		//Inicializar Variables
+		Scanner entrada;
+
+		// Inicializar Variables
 		entrada = new Scanner(System.in);
-		
-		
-		//Operativa y salida de datos
+
+		// Operativa y salida de datos
 
 		System.out.printf("Introduce un número entero n (altura):");
 		altura = entrada.nextInt();
@@ -46,27 +41,19 @@ public class App_4 {
 			// asteriscos
 			for (int j = 0; j < 2 * i - 1; j++) {
 
-				if (i < 9) {
-					if (i == 1 || j == 0 || j == 2 * i -1){
-						System.out.printf("%d", i);
-					} else{
-						System.out.printf("/");
-					}
-				}else {
-					
-					if (i == 1 || j == 0 || j == 2 * i  -1) {
-						System.out.printf("%d", i%10);
-					} else {
-						System.out.printf("/");
-					}
-					
+				if (i == 1 || j == 0 || j == 2 * i - 2) {
+					System.out.printf("%d", i%10);
+				} else if (j == (2 * i - 2)/2) {
+					System.out.printf("|");
+				} else {
+					System.out.printf("/");
 				}
-				
+
 			}
-
 			System.out.printf("%n");
-
 		}
+
 		entrada.close();
+
 	}
 }

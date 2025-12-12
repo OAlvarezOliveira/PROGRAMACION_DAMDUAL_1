@@ -15,10 +15,6 @@ import java.util.Scanner;
  *
  */
 
-/**
- * @author O.Alvarez
- *
- */
 public class App_5 {
 
 	public static void main(String[] args) {
@@ -29,27 +25,28 @@ public class App_5 {
 		double promedio;
 		double techo;
 		double suelo;
-		int verifica1;
+
 		int difAbsoluta;
 		int diferencia;
 		boolean procesa = true;// se intenta envitar el uso de break
 		boolean usado;
-		boolean usado2;
+
 		Scanner entrada;
 
 		// Inicializar Variables
 		entrada = new Scanner(System.in);
 		usado = false;
-		usado2 = false;
 		numero1 = -21;
 		
         //Operativa
-		while (true) {
+		while (procesa) {
 			
 			//reset para nuevo caso
-			if (usado == false && usado2 == false) {numero1 = -21;
+//			if (usado == false && usado2 == false) {numero1 = -21;
+//			
+//			numero2 = -22;}
 			
-			numero2 = -22;}
+			numero2 = -22;
 
 			techo = 0;
 			suelo = 0;
@@ -81,17 +78,14 @@ public class App_5 {
 			if (numero1 == 0 || numero2 == 0 ) {
 				
 				System.out.printf("Fin de programa : Se introdujo un  0");
-				
+				procesa = false;
 			}
 			
 			if (numero1 == numero2) {
 				System.out.printf("Fin de programa : Los numeros son iguales");
-				break;
+				procesa = false;
 			}
-			
-
-
-			
+				
 			promedio = (double) (numero1 +numero2)/2 ;
 //			System.out.printf("Promedio: %.2f %n",promedio); DEBUGG
 
@@ -116,12 +110,10 @@ public class App_5 {
 			System.out.printf("Suelo %.2f %n",suelo);
 
 			//intercambia valores para nuevo calculo
-			numero2 = numero1;
-			usado2 = true;
-
-					 
-			
+			numero1 = numero2;
+	 			
 		}// Fin procesa
+		entrada.close();
 
 	}
 

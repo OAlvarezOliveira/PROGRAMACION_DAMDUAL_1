@@ -60,8 +60,8 @@ public class App_2 {
 		// salida de datos
 		
 		System.out.printf("Conta de numeros xerados:      %04d %n",acumulaNum);
-		System.out.printf("Numero mais baixo xerado:      %04d %n",mayor);
-		System.out.printf("Numero mais alto xerado:       %04d %n",menor);
+		System.out.printf("Numero mais alto xerado:      %04d %n",mayor);
+		System.out.printf("Numero mais baixo xerado:       %04d %n",menor);
 
 
 	}
