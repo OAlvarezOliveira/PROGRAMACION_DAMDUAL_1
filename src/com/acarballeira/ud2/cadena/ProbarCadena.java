@@ -60,7 +60,11 @@ public class ProbarCadena {
 		
 		System.out.println(correo.equalsIgnoreCase(correo2));
 		
+		String cadena = "Julio Mosquera";
 		
+		String [] partes = cadena.split(" "); 
+		
+		System.out.println(partes[0]);
 		
 		
 	}
