@@ -1,19 +1,21 @@
-package com.acarballeira.ud2.cadena;
+package com.acarballeira.ud2.stringsBoletin2;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  * Programa que lee una frase y visualiza cada palabra en columnas
- * seguida del número de letras SIN usar StringTokenizer
+ * seguida del número de letras usando StringTokenizer
  */
-public class Ejercicio08b {
+public class Ejercicio08a {
 
     public static void main(String[] args) {
         
         // Declarar variables
         String frase;
         Scanner entrada;
-        String[] palabras;
+        StringTokenizer tokenizer;
+        String palabra;
         int numLetras;
         
         // Inicializar
@@ -23,13 +25,14 @@ public class Ejercicio08b {
         System.out.printf("Introduce una frase:%n");
         frase = entrada.nextLine();
         
-        // Procesar con split (divide por espacios)
-        palabras = frase.trim().split("\\s+");
+        // Procesar con StringTokenizer
+        tokenizer = new StringTokenizer(frase);
         
         System.out.printf("%n%-20s %s%n", "PALABRA", "Nº LETRAS");
         System.out.printf("%-20s %s%n", "-------", "---------");
         
-        for (String palabra : palabras) {
+        while (tokenizer.hasMoreTokens()) {
+            palabra = tokenizer.nextToken();
             numLetras = palabra.length();
             System.out.printf("%-20s %d%n", palabra, numLetras);
         }

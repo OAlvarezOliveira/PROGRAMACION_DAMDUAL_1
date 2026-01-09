@@ -8,7 +8,7 @@
  * File: Ejercicio02.java
  */
 
-package com.acarballeira.ud2.cadena;
+package com.acarballeira.ud2.stringsBoletin2;
 
 import java.util.Scanner;
 

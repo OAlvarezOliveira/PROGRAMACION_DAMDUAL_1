@@ -8,7 +8,7 @@
  * File: Ejercicio7.java
  */
 
-package com.acarballeira.ud2.arrays;
+package com.acarballeira.ud2.arraysBoletin1;
 
 import java.util.Scanner;
 

@@ -8,7 +8,7 @@
  * File: Ejercicio01.java
  */
 
-package com.acarballeira.ud2.cadena;
+package com.acarballeira.ud2.stringsBoletin2;
 
 /**
 Contar cuántos parámetros se pasan por línea de comandos
