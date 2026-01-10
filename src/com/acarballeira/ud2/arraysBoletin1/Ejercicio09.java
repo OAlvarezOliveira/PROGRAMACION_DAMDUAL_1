@@ -2,7 +2,7 @@ package com.acarballeira.ud2.arraysBoletin1;
 
 
 /**
- * Resolucion de la tarea
+ * Resolucion de la tarea 03. Ejercicios Arrays
  * 
  * Curso 2025-26
  * 
