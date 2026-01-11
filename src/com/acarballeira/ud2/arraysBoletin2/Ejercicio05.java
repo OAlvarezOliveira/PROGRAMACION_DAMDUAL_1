@@ -3,7 +3,7 @@ package com.acarballeira.ud2.arraysBoletin2;
 import java.util.Scanner;
 
 /**
- * Resolucion de la tarea
+* Resolucion de la tarea 1. Boletin arrays 2
  * 
  * Curso 2025-26
  * 
@@ -46,6 +46,7 @@ public class Ejercicio05 {
 			}
 
 		} while (eleccion != -1);
+		teclado.close();
 
 	}
 

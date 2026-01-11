@@ -3,7 +3,7 @@ package com.acarballeira.ud2.arraysBoletin2;
 import java.util.Scanner;
 
 /**
- * Resolucion de la tarea
+* Resolucion de la tarea 1. Boletin arrays 2
  * 
  * Curso 2025-26
  * 
@@ -11,6 +11,9 @@ import java.util.Scanner;
  * @version 1.0
  *
  */
+
+
+
 
 /*
  * Crea un array de caracteres que contenga de la ‘A’ a la ‘Z’ (solo las
@@ -53,6 +56,8 @@ public class Ejercicio05B {
 			}
 
 		} while (eleccion != -1);
+		
+		teclado.close();
 
 	}
 

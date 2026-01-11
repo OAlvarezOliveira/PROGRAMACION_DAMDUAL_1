@@ -3,7 +3,7 @@ package com.acarballeira.ud2.arraysBoletin2;
 import java.util.Scanner;
 
 /**
- * Resolucion de la tarea
+* Resolucion de la tarea 1. Boletin arrays 2
  * 
  * Curso 2025-26
  * 
@@ -55,7 +55,7 @@ public class Ejercicio04 {
 			System.out.printf("Añade la edad del alumno ");
 			matrizAlumnos[i][1] = scanner.next(); 
 	 }
-		scanner.close();	
+	
 		return matrizAlumnos;
 
 	}
@@ -69,5 +69,6 @@ public class Ejercicio04 {
 		
 		
 	}
+	
 
 }
