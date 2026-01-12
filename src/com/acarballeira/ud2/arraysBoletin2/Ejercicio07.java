@@ -29,11 +29,17 @@ public class Ejercicio07 {
 
 		int vector1[];
 		int vectorCopia[];
+		int relleno; 
+		int posicion1;
+		int posicion2;
 
 		vector1 = new int[DIMENSION];
+		relleno = 8;
+		posicion1 = 1;
+		posicion2 = 9;
 
-		creaVector(vector1);
-		vectorCopia = copiaVector(vector1);
+		creaVector(vector1,relleno);
+		vectorCopia = copiaVector(vector1,posicion1,posicion2);
 		muestraVector(vectorCopia);
 
 	}
@@ -46,17 +52,29 @@ public class Ejercicio07 {
 
 		}
 	}
+	
+	/**
+	 * 
+	 * @param vector1 , requiere un vector de 10 posiciones
+	 * @return devuele un rango del vector original sin las posiciones 0 y 10;
+	 */
 
-	private static int[] copiaVector(int[] vector1) {
+	private static int[] copiaVector(int[] vector1,int posicion1 , int posicion2) {
 
 		int[] vector;
-		vector = Arrays.copyOfRange(vector1, 1, 9);
+		vector = Arrays.copyOfRange(vector1,posicion1,posicion2);
 		return vector;
 	}
+	
+	/**
+	 * Crea un vector lleno del parameto relleno
+	 * @param vector1
+	 * @param relleno , valor int para llenar el vector1
+	 */
 
-	private static void creaVector(int[] vector1) {
+	private static void creaVector(int[] vector1, int relleno) {
 
-		Arrays.fill(vector1, 8);
+		Arrays.fill(vector1, relleno);
 
 	}
 

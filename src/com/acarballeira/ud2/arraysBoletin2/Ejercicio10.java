@@ -1,6 +1,5 @@
 /**
- * Resolucion de la tarea 
- *
+ * Resolucion de la tarea 1. Boletin arrays 2
  * Curso 2026-26
  *
  * @author oalva

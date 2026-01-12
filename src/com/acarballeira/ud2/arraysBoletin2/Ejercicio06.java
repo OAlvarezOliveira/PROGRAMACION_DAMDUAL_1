@@ -10,6 +10,7 @@
 
 package com.acarballeira.ud2.arraysBoletin2;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -41,17 +42,33 @@ public class Ejercicio06 {
 		muestraVector(vectorConcatenado);
 
 	}
+	
+	/**
+	 * Genera un vector de double cuyos valores oscilan entre 1 y 99
+	 * @param vectorConcatenado
+	 */
 
 	private static double[] creaVector(double vector[], int dimension) {
+		
+		Random aleatorio;
+		aleatorio = new Random();
 
 		for (int i = 0; i < dimension; i++) {
 
-			vector[i] = (Math.random() * 99) + 1;
+			vector[i] = aleatorio.nextDouble(1,100);
 		}
 
 		return vector;
 
 	}
+	
+	/**
+	 * Concatena dos vectores de double
+	 * @param vector1 Primer vector de double a unir
+	 * @param vector2 Segundo vector de double a unir
+	 * Emplea las constantes DIMENSION1 y DIMENSION2 como longitudes de cada vector
+	 * @return Un nuevo vector de double que comienza por los calores de v1 seguidos de los de v2
+	 */
 
 	private static double[] concatenaVector(double[] vector1, double[] vector2) {
 
@@ -69,6 +86,11 @@ public class Ejercicio06 {
 
 		return vectorConcatenado;
 	}
+	
+	/**
+	 *Imprime vector de double
+	 * @param vectorConcatenado
+	 */
 
 	private static void muestraVector(double[] vectorConcatenado) {
 

@@ -1,5 +1,5 @@
 /**
- * Resolucion de la tarea 
+ * Resolucion de la tarea 1. Boletin arrays 2
  *
  * Curso 2026-26
  *
@@ -11,6 +11,7 @@
 package com.acarballeira.ud2.arraysBoletin2;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * Ordena un array de números enteros generados al azar con sort de Arrays.
@@ -65,9 +66,13 @@ public class Ejercicio09 {
 	}
 
 	private static void creaVector(int[] vector) {
+		
+		Random aleatorio;
+		
+		aleatorio = new Random();
 
 		for (int i = 0; i < vector.length; i++) {
-	        vector[i] = (int) (Math.random() * 100) + 1;
+	        vector[i] = aleatorio.nextInt(100);
 	    }
 
 	}
