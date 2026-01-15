@@ -36,7 +36,8 @@ public class Ejercicio04 {
 		frase = entrada.nextLine();
 
 //		frase = "Hola mundo desde Galicia"; DEBUGG
-
+		
+		frase.trim();
 		posicion = frase.lastIndexOf(' ');
 
 		if (posicion > 0) {

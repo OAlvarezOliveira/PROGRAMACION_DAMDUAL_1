@@ -14,7 +14,7 @@ public class Ejercicio06 {
         String frase;
         int contador;
         String consonantes;
-        String consonantesEncontradas;  // ← String, NO array
+        String consonantesEncontradas;  
         char buscaConsonante;
 
         // INICIALIZACION
