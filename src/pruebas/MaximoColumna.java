@@ -5,7 +5,7 @@
  *
  * @author oalva
  * @version 1.0
- * File: MinimoFila.java
+ * File: MaximoColumna.java
  */
 
 package pruebas;
@@ -14,14 +14,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Enunciado: Pedir filas y columnas. Crear matriz con aleatorios [1-50].
- * Encontrar e imprimir el mínimo de cada fila con su posición (columna donde
- * está). Ejemplo salida: Matriz: 23 45 12 67 34 12 90 45 56 78 34 12
  * 
- * Fila 0: mínimo = 12 en columna 2 Fila 1: mínimo = 12 en columna 1 Fila 2:
- * mínimo = 12 en columna 3
  */
-public class MinimoColumna {
+public class MaximoColumna {
 
 	/**
 	 * @param args
@@ -33,29 +28,29 @@ public class MinimoColumna {
 
 		rellenaMatriz(numerosAleatorios);
 		imprimereMatriz(numerosAleatorios);
-		imprimeMinimosColumna(numerosAleatorios);
+		imprimeMaximosColumna(numerosAleatorios);
 
 		entrada.close();
 
 	}
 
-	private static void imprimeMinimosColumna(int[][] numerosAleatorios) {
+	private static void imprimeMaximosColumna(int[][] numerosAleatorios) {
 
 	    for (int col = 0; col < numerosAleatorios[0].length; col++) {
 	        
-	        int minimo = Integer.MAX_VALUE;
-	        int filaMinPos  = -1;  
+	        int maximo = Integer.MIN_VALUE;
+	        int filaMaxPos = -1;  
 	        
 	        for (int fila = 0; fila < numerosAleatorios.length; fila++) {
 	            
-	            if (numerosAleatorios[fila][col] < minimo) {  
-	            	minimo = numerosAleatorios[fila][col];
-	            	filaMinPos  = fila;
+	            if (numerosAleatorios[fila][col] > maximo) {  
+	                maximo = numerosAleatorios[fila][col];
+	                filaMaxPos = fila;
 	            }
 	        }
 	        
-	        System.out.printf("Columna %d: mínimo = %d en fila %d\n", 
-	            col, minimo, filaMinPos );
+	        System.out.printf("Columna %d: máximo = %d en fila %d\n", 
+	            col, maximo, filaMaxPos);
 	    }
 	}
 	
