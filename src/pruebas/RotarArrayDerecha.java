@@ -23,21 +23,22 @@ public class RotarArrayDerecha {
 		int[] array = new int[] { 1, 2, 3, 4, 5 };
 		int posiciones = 2;
 
-
 		int[] arrayRotado = rotarDerecha(array, posiciones);
 
-		System.err.printf("----ArrayOriginal---- \n");
+		System.err.printf("\t\t----ArrayOriginal---- \n");
+		imprimeArray(array);
+
+		System.err.printf("\t\t---ArrayRotado---- \n");
+		imprimeArray(arrayRotado);
+	}
+
+	private static void imprimeArray(int[] array) {
+
 		for (int i : array) {
 
 			System.err.printf("\t%d", i);
 		}
-
-		System.err.printf("----ArrayRotado---- \n");
-		for (int i : arrayRotado) {
-
-			System.err.printf("\t%d", i);
-		}
-
+		System.err.printf("\n\n");
 	}
 
 	private static int[] rotarDerecha(int[] array, int posiciones) {
