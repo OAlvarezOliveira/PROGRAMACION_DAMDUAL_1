@@ -13,13 +13,13 @@ package pruebas;
 import java.io.InputStream;
 import java.util.Scanner;
 
-public class LeerYcalcular {
+public class LeerYcalcularArch {
 	public static void main(String[] args) {
 		procesarNumeros();
 	}
 
 	static void procesarNumeros() {
-		InputStream ip = LeerYcalcular.class.getResourceAsStream("numeros2.txt");
+		InputStream ip = LeerYcalcularArch.class.getResourceAsStream("numeros2.txt");
 		Scanner sc = new Scanner(ip);
 
 		int suma = 0;
