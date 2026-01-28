@@ -26,7 +26,6 @@ public class VentasArchArgs {
 		// Validar cantidad de argumentos
 		if (args.length != 2) {
 			System.out.printf("\tUso: ARGS = nombreArchivo.txt & producto válido 1-3\n");
-			return;
 		}
 
 		String archivo = args[0];
@@ -35,7 +34,6 @@ public class VentasArchArgs {
 		// Validar que edad sea positiva
 		if (productoValido < 0 || productoValido > 3) {
 			System.out.printf("\tLos productos seleccionables son el rango 1-3.\n");
-			return;
 		}
 
 		int[][] matriz = generaMatrizDesdeArchivo(archivo);
