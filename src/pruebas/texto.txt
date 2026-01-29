@@ -1,0 +1,3 @@
+Java es un lenguaje orientado a objetos
+Aprender programación requiere práctica
+Cada día mejoras un poco más
