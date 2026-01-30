@@ -78,10 +78,8 @@ public class CalificacionesArchArgs {
 			if (mediaEstudiante >= notaAprobar) {
 				aprobadosGeneral++;
 			}
-
 			System.out.printf("%s %.2f %.2f %.2f → Media: %.2f [%s]\n", alumnos[i], notas[i][0], notas[i][1],
 					notas[i][2], mediaEstudiante, estado);
-
 		}
 
 		System.out.printf("--- Estadísticas por Asignatura ---\n");
