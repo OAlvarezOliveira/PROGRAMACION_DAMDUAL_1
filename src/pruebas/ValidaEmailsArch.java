@@ -33,8 +33,6 @@ public class ValidaEmailsArch {
 		String patron ="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"; 
 		String esCorrecto;
 		int contValido= 0;
-		int contInvalido= 0;
-		String linea = "";
 		
 		System.out.printf("=== VALIDACIÓN EMAILS === \n");
 		for (int i = 0; i < vectorEmail.length; i++) {
@@ -45,7 +43,6 @@ public class ValidaEmailsArch {
 				 esCorrecto = "VÁLIDO";
 				 System.out.printf("%s - %s \n",vectorEmail[i],esCorrecto);
 			}else {
-				contInvalido++;
 				esCorrecto = "INVÁLIDO";
 				 System.out.printf("%s - %s \n",vectorEmail[i],esCorrecto);	
 				
